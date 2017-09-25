@@ -1,11 +1,8 @@
-> **Important: This package is not actively maintained.** For bug fixes and new features, please fork.
-
 Form
 ========
 
-[![This Project Has Been Deprecated.](http://www.repostatus.org/badges/0.1.0/abandoned.svg)](http://www.repostatus.org/#abandoned)
-[![Code Climate](https://codeclimate.com/github/adamwathan/form/badges/gpa.svg)](https://codeclimate.com/github/adamwathan/form)
-[![Coverage Status](https://coveralls.io/repos/adamwathan/form/badge.svg?branch=master)](https://coveralls.io/r/adamwathan/form?branch=master)
+[![Code Climate](https://codeclimate.com/github/avengers/form/badges/gpa.svg)](https://codeclimate.com/github/TheAvengers/form)
+[![Coverage Status](https://coveralls.io/repos/avengers/form/badge.svg?branch=master)](https://coveralls.io/r/TheAvengers/form?branch=master)
 
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
@@ -22,7 +19,7 @@ Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully 
 You can install this package via Composer by running this command in your terminal in the root of your project:
 
 ```bash
-composer require adamwathan/form
+composer require avengers/form
 ```
 
 ### Laravel
@@ -36,7 +33,7 @@ To do so, just update the `providers` array in your `config/app.php`:
 ```php
 'providers' => [
         //...
-        'AdamWathan\Form\FormServiceProvider'
+        'TheAvengers\Form\FormServiceProvider'
     ],
 ```
 
@@ -45,7 +42,7 @@ You can also choose to use the Facade by adding an alias in `config/app.php`:
 ```php
 'aliases' => [
         //...
-        'Form' => 'AdamWathan\Form\Facades\Form',
+        'Form' => 'TheAvengers\Form\Facades\Form',
     ],
 ```
 
@@ -70,7 +67,7 @@ You can also choose to use the Facade by adding an alias in `config/app.php`:
 First, instantiate a FormBuilder...
 
 ```php
-$builder = new AdamWathan\Form\FormBuilder;
+$builder = new TheAvengers\Form\FormBuilder;
 ```
 
 Next, use the FormBuilder to build an element. For example:
@@ -384,3 +381,8 @@ $model->date_of_birth = new DateTime('1985-05-06');
 When using data binding, old input will still take priority over any of your bound values, so you can still easily redirect the user back to the form with any validation errors without losing any of the data they entered.
 
 > Note: Be sure to `bind` before creating any other form elements.
+
+## Contributors
+
+- [AdamWathan](https://github.com/adamwathan) Adam Wathan - creator
+- [emir](https://github.com/emir) Emir Karşıyakalı - maintainer

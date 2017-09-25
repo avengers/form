@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\Label;
+use TheAvengers\Form\Elements\Label;
 
 class LabelTest extends PHPUnit_Framework_TestCase
 {
@@ -48,7 +48,7 @@ class LabelTest extends PHPUnit_Framework_TestCase
 
     public function testCanWrapBeforeElement()
     {
-        $element = Mockery::mock('AdamWathan\Form\Elements\Element');
+        $element = Mockery::mock('TheAvengers\Form\Elements\Element');
         $element->shouldReceive('render')->once()->andReturn('<input>');
         $label = new Label('Email');
 
@@ -59,7 +59,7 @@ class LabelTest extends PHPUnit_Framework_TestCase
 
     public function testCanWrapAfterElement()
     {
-        $element = Mockery::mock('AdamWathan\Form\Elements\Element');
+        $element = Mockery::mock('TheAvengers\Form\Elements\Element');
         $element->shouldReceive('render')->once()->andReturn('<input>');
         $label = new Label('Email');
 
@@ -70,7 +70,7 @@ class LabelTest extends PHPUnit_Framework_TestCase
 
     public function testCanRetrieveElement()
     {
-        $element = Mockery::mock('AdamWathan\Form\Elements\Element');
+        $element = Mockery::mock('TheAvengers\Form\Elements\Element');
         $label = new Label('Email');
         $result = $label->after($element)->getControl();
         $this->assertEquals($element, $result);

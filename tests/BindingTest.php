@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\FormBuilder;
+use TheAvengers\Form\FormBuilder;
 
 class BindingTest extends PHPUnit_Framework_TestCase
 {
@@ -382,7 +382,7 @@ class BindingTest extends PHPUnit_Framework_TestCase
 
     public function testOldInputTakesPrecedenceOverBinding()
     {
-        $oldInput = Mockery::mock('AdamWathan\Form\OldInput\OldInputInterface');
+        $oldInput = Mockery::mock('TheAvengers\Form\OldInput\OldInputInterface');
         $oldInput->shouldReceive('hasOldInput')->andReturn(true);
         $oldInput->shouldReceive('getOldInput')->with('first_name')->andReturn('Steve');
         $this->form->setOldInputProvider($oldInput);

@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\Select;
+use TheAvengers\Form\Elements\Select;
 
 class SelectTest extends PHPUnit_Framework_TestCase
 {

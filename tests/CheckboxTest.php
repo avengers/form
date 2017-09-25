@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\Checkbox;
+use TheAvengers\Form\Elements\Checkbox;
 
 class CheckboxTest extends PHPUnit_Framework_TestCase
 {

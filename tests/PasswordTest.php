@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\Password;
+use TheAvengers\Form\Elements\Password;
 
 class PasswordTest extends PHPUnit_Framework_TestCase
 {

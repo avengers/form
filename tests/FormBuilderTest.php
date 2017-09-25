@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\FormBuilder;
+use TheAvengers\Form\FormBuilder;
 
 class FormBuilderTest extends PHPUnit_Framework_TestCase
 {
@@ -172,7 +172,7 @@ class FormBuilderTest extends PHPUnit_Framework_TestCase
 
     public function testCanCheckForErrorMessage()
     {
-        $errorStore = Mockery::mock('AdamWathan\Form\ErrorStore\ErrorStoreInterface');
+        $errorStore = Mockery::mock('TheAvengers\Form\ErrorStore\ErrorStoreInterface');
         $errorStore->shouldReceive('hasError')->with('email')->andReturn(true);
 
         $this->form->setErrorStore($errorStore);
@@ -180,7 +180,7 @@ class FormBuilderTest extends PHPUnit_Framework_TestCase
         $result = $this->form->hasError('email');
         $this->assertTrue($result);
 
-        $errorStore = Mockery::mock('AdamWathan\Form\ErrorStore\ErrorStoreInterface');
+        $errorStore = Mockery::mock('TheAvengers\Form\ErrorStore\ErrorStoreInterface');
         $errorStore->shouldReceive('hasError')->with('email')->andReturn(false);
 
         $this->form->setErrorStore($errorStore);
@@ -191,7 +191,7 @@ class FormBuilderTest extends PHPUnit_Framework_TestCase
 
     public function testCanRetrieveErrorMessage()
     {
-        $errorStore = Mockery::mock('AdamWathan\Form\ErrorStore\ErrorStoreInterface');
+        $errorStore = Mockery::mock('TheAvengers\Form\ErrorStore\ErrorStoreInterface');
         $errorStore->shouldReceive('hasError')->andReturn(true);
         $errorStore->shouldReceive('getError')->with('email')->andReturn('The e-mail address is invalid.');
 
@@ -204,7 +204,7 @@ class FormBuilderTest extends PHPUnit_Framework_TestCase
 
     public function testCanRetrieveFormattedErrorMessage()
     {
-        $errorStore = Mockery::mock('AdamWathan\Form\ErrorStore\ErrorStoreInterface');
+        $errorStore = Mockery::mock('TheAvengers\Form\ErrorStore\ErrorStoreInterface');
         $errorStore->shouldReceive('hasError')->andReturn(true);
         $errorStore->shouldReceive('getError')->with('email')->andReturn('The e-mail address is invalid.');
 
@@ -217,7 +217,7 @@ class FormBuilderTest extends PHPUnit_Framework_TestCase
 
     public function testFormattedErrorMessageReturnsNothingIfNoError()
     {
-        $errorStore = Mockery::mock('AdamWathan\Form\ErrorStore\ErrorStoreInterface');
+        $errorStore = Mockery::mock('TheAvengers\Form\ErrorStore\ErrorStoreInterface');
         $errorStore->shouldReceive('hasError')->with('email')->andReturn(false);
 
         $this->form->setErrorStore($errorStore);
