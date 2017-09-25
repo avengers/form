@@ -2,7 +2,7 @@ Form
 ========
 
 [![Code Climate](https://codeclimate.com/github/avengers/form/badges/gpa.svg)](https://codeclimate.com/github/TheAvengers/form)
-[![Coverage Status](https://coveralls.io/repos/avengers/form/badge.svg?branch=master)](https://coveralls.io/r/TheAvengers/form?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/avengers/form/badge.svg?branch=master)](https://coveralls.io/github/avengers/form?branch=master)
 
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
