@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\Date;
+use TheAvengers\Form\Elements\Date;
 
 class DateTest extends PHPUnit_Framework_TestCase
 {

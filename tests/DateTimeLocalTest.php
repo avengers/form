@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\Elements\DateTimeLocal;
+use TheAvengers\Form\Elements\DateTimeLocal;
 
 class DateTimeLocalTest extends PHPUnit_Framework_TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\Form\ErrorStore\IlluminateErrorStore;
+use TheAvengers\Form\ErrorStore\IlluminateErrorStore;
 use Illuminate\Support\MessageBag;
 
 class IlluminateErrorStoreTest extends PHPUnit_Framework_TestCase
